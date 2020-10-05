@@ -24,6 +24,9 @@ This election audit was conducted in order to ensure accurate and satisfactory r
 
 This python script can be used, with some modification, for any election. This relies mostly on the format of provided data. Should the election result data, in .csv format, maintain it's current format, of candidate's names in column 3, and county name in column 2 - then you can run this script unchanged. However, so long as you import a .csv and know what columns your county names falls within, and which column your candidate's names fall within - you can use said column's index number to very minimally alter the script to work with your data. In example, if your candidate name was in column 5 and your county name fell within column 4 - you would simply change the number in parenthesis in the below script to those column's corresponding index number (column # - 1).
 
+Thus the code below would be changed to "candidate_name = row[4]" and "county_name = row[3]"
+
+
 ![Imgur](https://imgur.com/BylvQ6w.png)
 
 So, your two options to get this script to work with any .csv of data would be to
